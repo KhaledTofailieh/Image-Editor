@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="string_array">
+        <item>Edit</item>
+        <item>Your Photo</item>
+        <item>Pick</item>
+        <item>From Gallery</item>
+        <item>OR Take</item>
+        <item>Your Capture</item>
+    </string-array>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:context=".Edit_btns_fragment">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+               android:background="@drawable/custom_fragment" android:alpha="0.3"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+        <ImageButton
+                android:src="@drawable/ic_paint1"
+                android:layout_width="45dp"
+                android:layout_height="45dp" android:layout_alignParentStart="true" android:layout_marginStart="35dp"
+                android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:id="@+id/brush_button"
+                android:layout_marginTop="0dp" android:layout_marginLeft="35dp"
+                android:background="@drawable/custom_btn_round"/>
+        <ImageButton
+                android:src="@drawable/ic_crop_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true" android:id="@+id/crop_button" android:layout_marginTop="0dp"
+                android:background="@drawable/custom_btn_round"/>
+        <ImageButton
+                android:src="@drawable/ic_text_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:layout_alignParentTop="true"
+                android:layout_marginEnd="37dp"
+                android:id="@+id/text_button" android:layout_marginTop="0dp"
+                android:background="@drawable/custom_btn_round" android:layout_marginRight="37dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:id="@+id/brush_txt" android:layout_marginTop="0dp"
+                android:layout_marginLeft="11dp" android:layout_below="@+id/brush_button" android:text="Paint"
+                android:layout_alignLeft="@+id/brush_button" android:layout_alignStart="@+id/brush_button"
+                android:textSize="10sp" android:textColor="@color/text_color_Light"/>
+        <TextView
+                android:text="Crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:id="@+id/crop_txt" android:layout_marginTop="0dp"
+                android:layout_marginLeft="11dp" android:layout_below="@+id/crop_button"
+                android:layout_alignLeft="@+id/crop_button" android:layout_alignStart="@+id/crop_button"
+                android:textSize="10sp" android:textColor="@color/text_color_Light"/>
+        <TextView
+                android:text="Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp" android:id="@+id/add_text_txt" android:layout_marginTop="-1dp"
+                android:layout_marginRight="13dp" android:layout_below="@+id/text_button"
+                android:layout_alignRight="@+id/text_button" android:layout_alignEnd="@+id/text_button"
+                android:textSize="10sp" android:textColor="@color/text_color_Light"/>
+    </RelativeLayout>
+
+</FrameLayout>

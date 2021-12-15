@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+>
+
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp">
+
+        <TextView
+                android:text="0"
+                android:layout_height="38dp"
+                android:gravity="bottom"
+                android:id="@+id/Size_Spinner_Value"
+                android:layout_width="47dp"
+                android:textColor="#fff"
+                android:layout_alignParentStart="true" android:layout_marginStart="11dp"
+                android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:layout_marginLeft="11dp" android:layout_marginTop="0dp" android:textSize="18sp"
+                app:fontFamily="casual"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content" android:id="@+id/Size_Spinner_icon"
+                android:src="@drawable/ic_size_1"
+                android:layout_marginLeft="25dp" android:layout_marginBottom="0dp"
+                android:layout_alignBottom="@+id/Size_Spinner_Value" android:layout_toEndOf="@+id/Size_Spinner_Value"
+                android:layout_toRightOf="@+id/Size_Spinner_Value" android:layout_marginStart="25dp"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+
+             tools:context=".ImageGenerator_Fragment"
+            android:background="#000">
+
+   <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Generator_layout" android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+
+   </FrameLayout>
+
+   <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:fillViewport="true"
+               android:measureAllChildren="false"
+               android:scrollbars="horizontal"
+               android:layout_alignParentBottom="true" android:layout_marginBottom="0dp" android:background="@drawable/custom_fragment">
+
+      <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                    android:orientation="vertical" android:gravity="center_vertical">
+
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="60dp"
+                         android:id="@+id/button_board"
+                        android:paddingBottom="5dp"
+
+         >
+            <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/ok_create_button"
+                    android:background="@drawable/custom_btn_round"
+                    android:src="@drawable/ic_check_ok"
+                    android:layout_marginTop="0dp" android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+                    android:layout_marginLeft="25dp" android:layout_marginStart="25dp"
+                    android:layout_alignParentLeft="true"/>
+            <TextView
+                    android:text="Done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_Light"
+                    android:id="@+id/textView3" android:layout_marginTop="0dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp" android:layout_alignLeft="@+id/ok_create_button"
+                    android:layout_alignStart="@id/ok_create_button"
+                    android:layout_below="@+id/check_color_button" android:textSize="10sp"/>
+            <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:src="@drawable/ic_platte_btn"
+                    android:id="@+id/check_color_button"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/custom_btn_round"
+                    android:layout_alignTop="@+id/ok_create_button" android:layout_marginTop="0dp"
+            />
+            <TextView
+                    android:text="Fill Color"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_color_Light"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:id="@+id/textView6"
+                    android:layout_marginLeft="1dp" android:layout_alignLeft="@+id/check_color_button"
+                    android:layout_alignStart="@+id/check_color_button"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="0dp" android:layout_alignBottom="@+id/textView3"/>
+            <ImageView
+                    android:src="@drawable/ic_fullscreen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/set_full_screen" android:layout_marginBottom="-2dp"
+                    android:layout_alignBottom="@+id/check_color_button" android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true" android:layout_marginRight="25dp"
+                    android:layout_marginEnd="25dp"/>
+            <TextView
+                    android:text="Full Screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-4dp"
+                    android:id="@+id/textView7" android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="-4dp" android:layout_alignLeft="@+id/set_full_screen"
+                    android:layout_alignStart="@+id/set_full_screen"
+                    android:textColor="@color/text_color_Light" android:textSize="10sp"
+                    android:layout_alignBottom="@+id/textView3"/>
+         </RelativeLayout>
+         <RelativeLayout android:layout_width="match_parent" android:layout_height="60dp" android:paddingTop="5dp"
+         >
+
+            <EditText
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:text="100"
+                    android:textColor="@color/text_color_Light"
+                    android:textColorHint="@color/Stroke_Color"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:layout_alignParentTop="true" android:id="@+id/height_input"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp" android:layout_toEndOf="@+id/textView5"
+                    android:layout_toRightOf="@+id/textView5"/>
+            <EditText
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/text_color_Light"
+                    android:textColorHint="@color/Stroke_Color"
+                    android:text="100"
+                    android:ems="10"
+                    android:imeOptions="actionDone"
+                    android:layout_alignParentTop="true" android:id="@+id/width_Input"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/textView8" android:layout_toRightOf="@+id/textView8"
+                    android:layout_marginLeft="5dp" android:layout_marginStart="5dp"/>
+            <TextView
+                    android:text="Height "
+                    android:textColor="@color/Stroke_Color"
+                    android:fontFamily="casual"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                    android:layout_marginStart="25dp" android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" android:id="@+id/textView5" android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp"/>
+            <TextView
+                    android:text="Width "
+                    android:textColor="@color/Stroke_Color"
+                    android:fontFamily="casual"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8"
+                    android:layout_marginBottom="0dp"
+                    android:layout_alignBottom="@+id/textView5"
+                    android:layout_toEndOf="@+id/height_input" android:layout_toRightOf="@+id/height_input"
+                    android:layout_marginLeft="25dp" android:layout_marginStart="25dp"/>
+            <ImageView
+                    android:src="@drawable/ic_fullscreen_exit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="25dp" android:id="@+id/set_minimize_btn"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentTop="true"/>
+            <TextView
+                    android:text="Minimize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    android:layout_marginLeft="0dp" android:layout_marginStart="0dp"
+                    android:textColor="@color/text_color_Light" android:textSize="10sp"
+                    android:layout_alignLeft="@+id/set_minimize_btn" android:layout_alignStart="@+id/set_minimize_btn"
+                    android:layout_marginTop="0dp" android:layout_below="@+id/set_minimize_btn"/>
+         </RelativeLayout>
+
+
+
+      </LinearLayout>
+
+
+
+   </ScrollView>
+
+
+</RelativeLayout>

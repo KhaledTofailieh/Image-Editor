@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:context=".Adjust_btns_fragment">
+
+
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+               android:background="@drawable/custom_fragment" android:alpha="0.3"/>
+
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+        <ImageButton
+                android:src="@drawable/ic_invert_colors_button"
+                android:layout_width="45dp"
+                android:layout_height="45dp" android:layout_alignParentStart="true"
+                android:layout_marginStart="35dp" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" android:id="@+id/Color_edit_button" android:layout_marginTop="0dp"
+                android:layout_marginLeft="35dp" android:background="@drawable/custom_btn_round"/>
+        <ImageButton
+                android:src="@drawable/ic_hs_filter"
+                android:layout_width="45dp"
+                android:layout_height="45dp" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:layout_alignParentTop="true"
+                android:layout_marginEnd="35dp" android:id="@+id/HS_button" android:layout_marginTop="0dp"
+                android:layout_marginRight="35dp" android:background="@drawable/custom_btn_round"/>
+        <TextView
+                android:text="Edit Colors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-1dp"
+                android:id="@+id/colors_txt"
+                android:layout_marginLeft="-1dp" android:layout_marginTop="0dp"
+                android:layout_below="@+id/Color_edit_button" android:layout_alignLeft="@+id/Color_edit_button"
+                android:layout_alignStart="@+id/Color_edit_button" android:textSize="10sp"
+                android:textColor="@color/text_color_Light"/>
+        <TextView
+                android:text="Hue/Saturation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hs_text"
+                android:layout_below="@+id/HS_button"
+                android:layout_marginTop="0dp" android:layout_marginLeft="-10dp" android:layout_marginStart="-10dp"
+                android:layout_alignLeft="@+id/HS_button" android:layout_alignStart="@+id/HS_button"
+                android:textSize="10sp" android:textColor="@color/text_color_Light"/>
+    </RelativeLayout>
+</FrameLayout>

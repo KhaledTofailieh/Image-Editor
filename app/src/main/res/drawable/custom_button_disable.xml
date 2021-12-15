@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item >
+        <shape
+               android:shape="rectangle" >
+            <solid
+                    android:color="@color/Button_color_Disibled"/>
+            <padding
+                    android:right="0dp"
+                    android:left="0dp"
+                    android:top="0dp"
+                    android:bottom="0dp"/>
+            <corners
+                    android:radius="5sp"/>
+            <stroke
+
+                    android:width="1sp"
+                    android:color="@color/Stroke_color_Disabled"
+            />
+        </shape>
+    </item>
+
+</selector>

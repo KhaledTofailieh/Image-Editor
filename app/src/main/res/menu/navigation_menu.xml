@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <item android:title="Files">
+        <menu>
+    <group >
+
+        <item
+                android:id="@+id/Save_menu"
+                android:icon="@drawable/ic_save"
+                android:title="Save"/>
+
+
+        <item android:id="@+id/Settings_menu"
+              android:icon="@drawable/ic_settings"
+              android:title="Settings"/>
+
+    </group>
+        </menu>
+    </item>
+
+    <item android:title="Communication">
+        <menu>
+            <item android:title="Share"
+                  android:icon="@drawable/ic_sharee"
+                  android:id="@+id/Share_menu"
+                 />
+
+        </menu>
+    </item>
+
+</menu>

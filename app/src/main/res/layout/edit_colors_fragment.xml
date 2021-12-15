@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".EditColors_Fragment">
+
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+               android:background="@drawable/custom_button_disable" android:alpha="0.8"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <FrameLayout android:layout_width="match_parent" android:layout_height="15dp"
+                     android:layout_alignParentStart="true"
+                     android:layout_marginBottom="5dp"
+                     android:layout_marginEnd="5dp"
+                     android:layout_marginRight="5dp"
+                     android:background="@drawable/saturation_seekbar"
+                     android:layout_marginLeft="5dp" android:layout_marginStart="5dp" android:layout_alignParentLeft="true"
+                     android:layout_marginTop="40dp" android:layout_below="@+id/SaturationColor_txt"
+      >
+
+            <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:min="0"
+                    android:thumb="@drawable/ic_seeking"
+                    android:id="@+id/SaturationColor_Controller"
+                    android:layout_gravity="center"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="4dp"
+                    android:progressDrawable="@drawable/slider"
+                    android:paddingStart="4dp" android:paddingEnd="5dp"
+                 />
+        </FrameLayout>
+
+
+        <TextView
+                android:text="Hue :"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" android:id="@+id/Huecolor_txt" android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp" android:textSize="16sp" app:fontFamily="sans-serif-black"
+                android:textColor="@color/text_color_Dark" android:textAllCaps="true" android:textStyle="bold"/>
+        <TextView
+                android:text="Saturation :"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp" android:layout_alignParentLeft="true"
+                android:id="@+id/SaturationColor_txt" android:layout_marginTop="85dp"
+                android:layout_marginLeft="5dp" android:textSize="16sp" app:fontFamily="sans-serif-black"
+                android:layout_below="@+id/Huecolor_txt" android:textColor="@color/text_color_Dark"
+                android:textAllCaps="true" android:textStyle="bold"/>
+
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/hue_seekbar"
+                android:layout_alignParentEnd="true" android:layout_marginEnd="5dp"
+                android:id="@+id/HueColor_Container" android:layout_marginRight="5dp"
+                android:layout_alignParentStart="true" android:layout_marginLeft="5dp" android:layout_marginStart="5dp"
+                android:layout_alignParentLeft="true" android:layout_marginTop="40dp"
+                android:layout_below="@+id/Huecolor_txt">
+            <SeekBar
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/HueColor_Controller"
+                    android:progressDrawable="@drawable/slider"
+                    android:layout_gravity="center"
+                    android:thumb="@drawable/ic_seeking"/>
+        </FrameLayout>
+
+        <EditText
+                android:text="0"
+                android:hint="0"
+                android:textColorHint="#337A7A"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:imeOptions="actionDone"
+                android:id="@+id/HueColorValue_txt"
+                android:layout_marginTop="-5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/Huecolor_txt"
+                android:inputType="numberDecimal"
+                android:textColor="@color/text_color_Light" app:fontFamily="sans-serif-black"
+                android:textSize="18sp"/>
+
+        <EditText
+                android:text="100"
+                android:hint="1000 m"
+                android:textColorHint="#337A7A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:id="@+id/SaturationColorValue_txt"
+                android:layout_marginTop="-5dp"
+                android:imeOptions="actionDone"
+                android:imeActionLabel="Done"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/SaturationColor_txt" android:textColor="@color/text_color_Light"
+                app:fontFamily="sans-serif-black" android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+</FrameLayout>

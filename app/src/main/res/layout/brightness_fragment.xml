@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:context=".Brightness_Fragment">
+
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+               android:background="@drawable/custom_button_disable" android:alpha="0.8"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+        <ImageView
+                android:src="@drawable/ic_brightness_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/imageView3" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="7dp" android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp" android:layout_below="@+id/Brightness_txt"/>
+
+        <FrameLayout
+                android:layout_width="match_parent" android:layout_height="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp" android:layout_alignParentLeft="true"
+                android:id="@+id/Brightness_Container" android:layout_marginTop="40dp"
+                android:layout_marginLeft="5dp" android:layout_below="@+id/Brightness_txt"
+                android:layout_marginRight="5dp" android:layout_marginBottom="5dp"
+                android:background="@drawable/lightness_seekbar">
+            <SeekBar
+                    android:layout_width="match_parent"
+                    android:progressDrawable="@drawable/slider"
+                    android:thumb="@drawable/ic_seeking"
+                    android:layout_marginStart="0dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/Brightness_Controller"
+                    android:paddingLeft="5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="0dp"
+                    android:paddingRight="5dp"/>
+
+        </FrameLayout>
+
+        <TextView
+                android:text="Brightness : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="7dp" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/Brightness_txt" android:layout_marginTop="15dp" android:layout_marginLeft="7dp"
+                android:textColor="@color/text_color_Dark" app:fontFamily="sans-serif-black" android:textStyle="bold"
+                android:textAllCaps="true"/>
+        <TextView
+                android:text="50%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/BrightnessValue_txt"
+                app:fontFamily="sans-serif-black" android:textColor="@color/text_color_Light"
+                android:layout_alignBottom="@+id/Brightness_txt"
+                android:textSize="18sp" android:layout_toEndOf="@+id/Brightness_txt"
+                android:layout_toRightOf="@+id/Brightness_txt" android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" android:layout_marginBottom="0dp"/>
+        <ImageView
+                android:src="@drawable/ic_brightness_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/imageView" android:layout_alignParentStart="true"
+                android:layout_marginStart="7dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="7dp" android:layout_marginTop="7dp"
+                android:layout_below="@+id/Brightness_txt"/>
+        <ImageView
+                android:src="@drawable/ic_brightness_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/imageView2" android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp" android:layout_below="@+id/Brightness_txt"/>
+    </RelativeLayout>
+
+</FrameLayout>

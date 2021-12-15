@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".AddingTextFragment">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+               android:background="@color/colorPrimary" android:alpha="0.8"/>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:backgroundTint="@color/colorPrimary"
+                android:textSize="30sp"
+                android:hint="Enter Text"
+                android:textColorHint="@color/Stroke_Color"
+                android:textColor="@color/colorAccent" android:id="@+id/text_txt"
+                android:layout_centerInParent="true"/>
+        <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:layout_alignParentTop="true"
+                android:layout_marginEnd="20dp" android:id="@+id/Submit_text" android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp" android:background="@drawable/custom_button"
+                android:src="@drawable/ic_check_ok"/>
+        <TextView
+                android:text="Done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp" android:layout_marginStart="2dp"
+                android:layout_alignLeft="@+id/Submit_text" android:layout_alignStart="@+id/Submit_text"
+                android:layout_below="@+id/Submit_text" android:textColor="@color/colorAccent"/>
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_alignParentStart="true"
+                android:layout_marginStart="91dp" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" android:layout_marginTop="220dp" android:layout_marginLeft="91dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

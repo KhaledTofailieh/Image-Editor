@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             tools:context=".Rotate_left_right_fragment">
+
+
+    <ScrollView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteT="8dp"
+                tools:layout_editor_absoluteX="8dp"
+                android:background="@drawable/custom_background">
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+        <ImageView
+                android:src="@drawable/ic_rotate_left"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/Rotate_left_button"/>
+        <ImageView
+                android:src="@drawable/ic_rotate_right"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+
+                android:id="@+id/Rotate_right_button"
+                android:layout_marginTop="25dp"
+                />
+        <ImageView android:layout_width="40dp" android:layout_height="45dp"
+                   android:paddingStart="3dp" android:paddingLeft="3dp"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/flip_H" android:src="@drawable/flip_v">
+        </ImageView>
+        <ImageView android:layout_width="40dp" android:layout_height="45dp"
+                   android:paddingStart="3dp" android:paddingLeft="3dp"
+                   android:layout_marginTop="10dp"
+
+                   android:id="@+id/flip_V" android:src="@drawable/flip_h">
+        </ImageView>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

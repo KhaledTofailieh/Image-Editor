@@ -1,0 +1,10 @@
+<LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/header1"
+        android:gravity="bottom"
+        android:theme="@style/AppTheme."
+        xmlns:android="http://schemas.android.com/apk/res/android">
+</LinearLayout>

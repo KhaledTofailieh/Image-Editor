@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#090909</color>
+    <color name="colorPrimaryDark">#090909</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="Button_Color">#090909</color>
+    <color name="Stroke_Color">#0373A2</color>
+    <color name="Button_color_Disibled">#2C2C31</color>
+    <color name="Stroke_color_Disabled">#0373A0</color>
+    <color name="text_color_Light">#FFFFFF</color>
+    <color name="text_color_Dark">#000000</color>
+</resources>

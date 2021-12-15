@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             tools:context=".Zoom_in_out_fragment">
+
+  <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+             android:background="@drawable/custom_background" />
+  <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  >
+    <ImageView
+            android:src="@drawable/ic_zoom_in"
+            android:layout_width="45dp"
+            android:layout_height="45dp" android:layout_alignParentStart="true" android:layout_marginStart="0dp"
+            android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:id="@+id/Zoom_in_button"
+            android:layout_marginTop="0dp" android:layout_marginLeft="0dp"/>
+    <ImageView
+            android:src="@drawable/ic_zoom_out"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp" android:layout_alignParentLeft="true"
+            android:id="@+id/Zoom_out_button"
+            android:layout_marginLeft="0dp" android:layout_marginTop="25dp"
+            android:layout_below="@+id/Zoom_in_button"/>
+  </RelativeLayout>
+
+</FrameLayout>

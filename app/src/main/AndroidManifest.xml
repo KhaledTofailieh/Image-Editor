@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools" package="my.Activities">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/icon"
+            android:label="Editor"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="false"
+            android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme." android:screenOrientation="portrait">
+
+            <intent-filter >
+
+                    <action android:name="android.intent.action.MAIN"/>
+                    <category android:name="android.intent.category.LAUNCHER"/>
+
+
+
+
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".Second_Activity" android:theme="@style/SplashTheme" android:screenOrientation="portrait"/>
+
+
+    </application>
+    <supports-screens android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"
+                      android:anyDensity="true" tools:ignore="ManifestOrder"/>
+
+</manifest>

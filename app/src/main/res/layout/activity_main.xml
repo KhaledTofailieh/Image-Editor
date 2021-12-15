@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:backgroundTintMode="screen"
+        android:id="@+id/first_view"
+        tools:context=".MainActivity"
+>
+
+
+        <ImageButton
+
+                android:layout_width="70dp"
+                android:layout_height="70dp" app:srcCompat="@drawable/ic_camera"
+                android:background="@drawable/custom_button_inverse"
+                android:id="@+id/camera_btn"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentStart="true" android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+                tools:ignore="VectorDrawableCompat" android:scaleType="centerInside"/>
+
+        <ImageButton
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/custom_button"
+                android:layout_marginBottom="1dp"
+                android:layout_alignBottom="@+id/camera_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" android:layout_marginRight="51dp"
+                android:layout_marginEnd="51dp" android:id="@+id/gallery_btn" android:src="@drawable/ic_terrain"
+                android:scaleType="centerInside"/>
+        <TextView
+                android:text="Gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/gallery_txt"
+                android:layout_marginLeft="10dp" android:layout_alignLeft="@+id/gallery_btn"
+                android:layout_alignStart="@+id/gallery_btn" android:layout_marginTop="6dp"
+                android:layout_below="@+id/gallery_btn" android:textColor="@color/colorAccent"
+                app:fontFamily="casual"/>
+        <TextView
+                android:text="Camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:id="@+id/camera_txt" android:layout_marginBottom="0dp"
+                android:layout_marginLeft="8dp" android:layout_alignBottom="@+id/gallery_txt"
+                android:layout_alignLeft="@+id/camera_btn" android:layout_alignStart="@+id/camera_btn"
+                android:textColor="@color/colorAccent" app:fontFamily="casual"/>
+
+        <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp" app:srcCompat="@drawable/ic_create_new"
+
+                android:id="@+id/create_new_image"
+                android:background="@drawable/custom_button"
+                tools:ignore="VectorDrawableCompat"
+                android:layout_marginTop="10dp" android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_alignLeft="@+id/camera_btn" android:layout_alignStart="@+id/camera_btn"/>
+        <TextView
+                android:text="New"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_Light"
+                android:fontFamily="casual"
+                android:id="@+id/new_txt"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" android:layout_alignLeft="@+id/create_new_image"
+                android:layout_alignStart="@+id/create_new_image" android:layout_marginTop="0dp"
+                android:layout_below="@+id/create_new_image"/>
+
+
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                     android:id="@+id/Image_creator_layout">
+
+        </FrameLayout>
+
+</RelativeLayout>
+
+

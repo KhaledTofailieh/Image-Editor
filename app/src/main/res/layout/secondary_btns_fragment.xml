@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:context=".Secondary_btns_fragment">
+
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+               android:background="@color/Button_color_Disibled" android:alpha="0.0"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+    >
+        <ImageButton
+                android:src="@drawable/ic_close"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/close_button" android:layout_marginTop="0dp"
+                android:background="@drawable/custom_btn_round"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="35dp" android:layout_marginStart="35dp"
+                android:layout_alignParentLeft="true"/>
+        <ImageButton
+                android:src="@drawable/ic_check_ok"
+                android:layout_width="45dp"
+                android:layout_height="45dp" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:layout_alignParentTop="true"
+                android:id="@+id/check_ok_button" android:layout_marginTop="0dp"
+                android:layout_marginRight="35dp" android:background="@drawable/custom_btn_round"
+                android:layout_marginEnd="35dp"/>
+        <TextView
+                android:text="Close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/close_txt"
+                android:layout_marginTop="0dp" android:layout_below="@+id/close_button"
+                android:layout_marginLeft="5dp" android:layout_marginStart="5dp"
+                android:layout_alignLeft="@+id/close_button" android:layout_alignStart="@+id/close_button"
+                android:textSize="12sp" android:textColor="@color/text_color_Light"/>
+        <TextView
+                android:text="OK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_ok_txt" android:layout_marginTop="0dp"
+                android:layout_below="@+id/check_ok_button"
+                android:layout_marginLeft="13dp" android:layout_marginStart="13dp"
+                android:layout_alignLeft="@+id/check_ok_button" android:layout_alignStart="@+id/check_ok_button"
+                android:textSize="12sp" android:textColor="@color/text_color_Light"/>
+    </RelativeLayout>
+
+</FrameLayout>
